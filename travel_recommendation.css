@@ -6,12 +6,16 @@
     box-sizing: border-box;
 }
 nav {
-    background-color: #f0f0f0;
+    background-color: #353535;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     
+  }
+
+  nav h1 {
+    color: white;
   }
   
   nav ul {
@@ -26,24 +30,26 @@ nav {
   
   nav a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
   }
   
   /* Basic CSS for the form elements */
+
   body {
     font-family: Arial, sans-serif;
     /* margin: 20px; */
   }
   
-  h1 {
-    margin-bottom: 20px;
+  #searchBox {
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
   }
-  
-  div {
-    margin-bottom: 10px;
-  }
-  
+
   label {
     display: inline-block;
     width: 100px;
@@ -52,23 +58,264 @@ nav {
   input[type="text"],
   input[type="number"],
   select {
-    width: 200px;
+    width: 300px;
     padding: 5px;
+    border: none;
+    color: #037579;
   }
   
   button {
     padding: 7px 15px;
-    background-color: #4CAF50;
+    background-color: #037579;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   button:hover {
     background-color: #45a049;
   }
   
+  /*CSS for home page content*/
+
+  #home_content {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    border: none;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+  }
+
+  #social_icons_col {
+    /*background-color: rgba(211, 211, 211, 0.473);*/
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  #content_col {
+    /*background-color: rgba(173, 216, 230, 0.445);*/
+    display: grid;
+    align-content: center;
+    padding-left: 50px;
+  }
+
+  #content_rows {
+    width: 40%;
+  }
+
+  #content_rows h1 {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  #content_rows p {
+    font-size: 16px;
+    font-weight: 300;
+    width: 70%;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  #btnBook {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+/* CSS for about us page */
+
+  #about_us_content {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    padding-top: 50px;
+    border: none;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+  }
+
+  #about_us_content_col {
+    /*background-color: rgba(173, 216, 230, 0.445);*/
+    display: grid;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+
+  #about_us_content_rows {
+    width: 100%;
+  }
+
+  .textbgdark {
+    background-color: #00000048;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #about_us_content_rows h1 {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  #about_us_content_rows p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  #our_team {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 50px;
+    padding-left: 50px;
+  }
+
+  #our_team h2 {
+    font-size: 70px;
+    color: white;
+  }
+
+  #team_profiles {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 25px;
+  }
+
+  #profile1 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #profile2 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #profile3 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #col2 {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 10px;
+  }
+
+  #col2 h3 {
+    color: white;
+  }
+
+  #btnProfile {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* CSS for contact us page */
+
+  #contact_us_content {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    padding-top: 50px;
+    border: none;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+  }
+
+  #contact_us_content_col {
+    /*background-color: rgba(173, 216, 230, 0.445);*/
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+
+  #contact_us_text h1 {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  #contact_us_text p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+  }
+
+  #contact_form {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    width: 100%;
+  }
+
+  #contact_form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    background-color: #00000000;
+    border-radius: 4px;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  #contact_form label {
+    display: inline-block;
+    width: 100px;
+    color: white;
+  }
+
+  #contact_form input[type=submit] {
+    width: 100%;
+    background-color: #037579;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #contact_form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #00000000;
+    color: white;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
   /* Basic CSS for the report section */
+
   h2 {
     margin-top: 30px;
   }
@@ -78,7 +325,8 @@ nav {
     max-width: 400px;
     word-wrap: break-word;
   }
-#result{
+
+  #result{
   height: 400px;
   width: 500px;
   display: flex;
